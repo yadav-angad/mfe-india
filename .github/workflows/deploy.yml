@@ -27,11 +27,11 @@ jobs:
 
       - name: Echo GitHub Token (masked)
         run:
-          echo "Token starts with: ${GITHUB_TOKEN:0:4}"
+          echo "Token starts with: ${GITHUBTOKEN:0:4}"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
 
       - name: Deploy to GitHub Pages
         run: yarn deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
