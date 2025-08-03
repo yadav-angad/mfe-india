@@ -43,7 +43,7 @@ module.exports = {
       name: "MfeIndia",
       filename: "remoteEntry.js",
       remotes: {
-        host: 'host@http://localhost:3000/remoteEntry.js',
+        host: 'host@https://yadav-angad.github.io/mfe-host-controller/remoteEntry.js',
       },
       exposes: {
         "./MfeIndia": "./src/App.js"
