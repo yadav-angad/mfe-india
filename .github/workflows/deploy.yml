@@ -28,4 +28,4 @@ jobs:
       - name: Deploy to GitHub Pages
         run: yarn deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+          GITHUB_TOKEN: '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'
