@@ -25,12 +25,6 @@ jobs:
       - name: Build App
         run: yarn build
 
-      - name: Echo GitHub Token (masked)
-        run:
-          echo "Token starts with: ${GITHUBTOKEN:0:4}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-
       - name: Deploy to GitHub Pages
         run: yarn deploy
         env:
