@@ -23,7 +23,7 @@ export default function () {
             sx={{ marginBottom: '10px', width: '100%' }}
             onChange={(e) => setUserName(e.target.value)}
           />
-          <Button sx={{ backgroundColor: 'blue', color: 'white', '&:hover': { backgroundColor: 'darkblue' } }} onClick={() => {
+          <Button sx={{ backgroundColor: 'DarkGreen', color: 'white', '&:hover': { backgroundColor: 'Green' } }} onClick={() => {
             dispatch({ type: 'SET_USER', payload: { name: userName } })
           }}>
             {'Set Username'}
